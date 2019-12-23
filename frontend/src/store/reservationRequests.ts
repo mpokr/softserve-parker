@@ -32,7 +32,7 @@ const getters: GetterTree<ReservationRequestsState, RootState> = {
   },
   tommorowWeekendDay: () => {
     const tommorowDay = moment().add(1, 'day').day()
-    return tommorowDay === 6 || tommorowDay === 7
+    return tommorowDay === 0 || tommorowDay === 6
   }
 }
 
